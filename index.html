@@ -23,38 +23,8 @@
       <a href="#contact">تواصل</a>
     </nav>
     <a class="header-cta whatsapp-link" href="https://wa.me/201283801464?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D8%AB%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9" target="_blank" rel="noopener"><span>تواصل واتساب</span><i>↗</i></a>
-    <button class="admin-trigger" type="button" aria-controls="admin-panel">إدارة الموقع</button>
     <button class="menu-toggle" aria-label="فتح القائمة"><span></span><span></span></button>
   </header>
-
-  <aside class="admin-panel" id="admin-panel" hidden>
-    <div class="upload-panel-head"><div><p class="eyebrow">ADMIN / CONTENT</p><h3>إدارة الموقع</h3></div><button class="upload-close" type="button" aria-label="إغلاق لوحة الإدارة">×</button></div>
-    <form class="admin-login" novalidate>
-      <label>البريد الإلكتروني<input name="email" type="email" autocomplete="username" required placeholder="admin@example.com"></label>
-      <label>كلمة المرور<input name="password" type="password" autocomplete="current-password" required></label>
-      <button class="button button-primary" type="submit">تسجيل الدخول <span>↗</span></button>
-    </form>
-    <div class="admin-tools" hidden>
-      <div class="admin-toolbar"><strong>أنت مسجل الدخول</strong><button class="admin-logout" type="button">تسجيل الخروج</button></div>
-      <form class="content-form" novalidate>
-        <label>العنوان الرئيسي<input name="heroTitle" required></label>
-        <label>النص التعريفي<textarea name="heroIntro" rows="3" required></textarea></label>
-        <label>نبذة عن الاستوديو<textarea name="aboutText" rows="4" required></textarea></label>
-        <label>البريد الإلكتروني<input name="contactEmail" type="email" required></label>
-        <button class="button button-primary" type="submit">حفظ محتوى الصفحة <span>↗</span></button>
-      </form>
-      <form class="project-form" novalidate>
-        <h4>إضافة مشروع</h4>
-        <label>اسم المشروع<input name="title" required></label>
-        <label>الوصف<input name="description" required></label>
-        <label>التصنيف<select name="category"><option value="mobile">تطبيقات</option><option value="web">ويب</option><option value="identity">هوية</option></select></label>
-        <label class="file-drop">صورة الغلاف<input name="cover" type="file" accept="image/*"><span>اختياري</span></label>
-        <label class="file-drop">ملف المشروع<input name="file" type="file"><span>اختياري</span></label>
-        <button class="button button-primary" type="submit">إضافة المشروع <span>＋</span></button>
-      </form>
-    </div>
-    <p class="admin-status" role="status"></p>
-  </aside>
 
   <main id="top">
     <section class="hero">
@@ -92,13 +62,13 @@
       <div class="section-heading reveal"><div><p class="eyebrow">01 / الأعمال</p><h2>أشياء <em>أنجزناها.</em></h2></div><p class="section-note">كل مشروع يبدأ بسؤال جيد.<br>هذه بعض الإجابات.</p></div>
       <div class="filter-bar" role="tablist" aria-label="تصفية المشاريع"><button class="filter active" data-filter="all">الكل <sup>07</sup></button><button class="filter" data-filter="mobile">تطبيقات <sup>04</sup></button><button class="filter" data-filter="web">ويب <sup>02</sup></button><button class="filter" data-filter="identity">هوية <sup>01</sup></button></div>
       <div class="project-grid">
-        <article class="project-card project-large reveal" data-category="mobile"><div class="project-image image-aurora"><div class="project-ui aurora-ui"><span class="ui-logo">A</span><span class="ui-title">مساحتك<br><b>للصحة</b></span><div class="ui-progress"><i></i></div><small>رحلة اليوم 72%</small></div><span class="image-index">01</span></div><div class="project-meta"><div><h3>Aurora Health</h3><p>تطبيق عافية شخصية · 2024</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal delay-1" data-category="web"><div class="project-image image-madad"><div class="madad-window"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><div class="madad-copy">أفكار<br><em>تترك أثرًا</em></div><div class="madad-shape"></div></div><span class="image-index">02</span></div><div class="project-meta"><div><h3>مدد للاستثمار</h3><p>منصة استثمار · 2023</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal" data-category="identity"><div class="project-image image-noon"><span class="noon-star">✳</span><span class="noon-word">نُــون</span><span class="noon-caption">مقهى · لحظة · مكان</span><span class="image-index">03</span></div><div class="project-meta"><div><h3>Noon Coffee</h3><p>استراتيجية وهوية · 2023</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card project-wide reveal" data-category="mobile"><div class="project-image image-safha"><div class="safha-side">01 — 06</div><div class="safha-title">القراءة<br><em>كما تحبها.</em></div><div class="book-lines"></div><span class="image-index">04</span></div><div class="project-meta"><div><h3>صفحة</h3><p>قارئ كتب اجتماعي · 2022</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card reveal" data-category="web"><div class="project-image image-nova"><div class="nova-grid"></div><strong>NOVA<br><small>STUDIO</small></strong><span class="image-index">05</span></div><div class="project-meta"><div><h3>Nova Studio</h3><p>موقع إبداعي · 2022</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card project-wide reveal" data-category="mobile"><div class="project-image image-wasl"><div class="wasl-map"><span class="map-pin">◆</span><span class="map-route"></span><div class="map-label">واسِل<br><small>خليك قريب</small></div></div><span class="image-index">06</span></div><div class="project-meta"><div><h3>واصل</h3><p>تجربة تنقل محلية · 2021</p></div><span class="project-arrow">↗</span></div></article>
-        <article class="project-card project-wide reveal justice-project" data-category="mobile"><div class="project-image image-justice"><span class="image-index">07</span></div><div class="project-meta"><div><h3>منصة فرسان العدالة</h3><p>تطبيق للمحاماة · 2026</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card project-large reveal" data-category="mobile"><div class="project-image image-justice"><span class="image-index">01</span></div><div class="project-meta"><div><h3>منصة فرسان العدالة</h3><p>منظومة رقمية للمحاماة وإدارة القضايا · 2026</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card reveal delay-1" data-category="web"><div class="project-image image-madad"><div class="madad-window"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><div class="madad-copy">مِداد<br><em>للفكرة أثر</em></div><div class="madad-shape"></div></div><span class="image-index">02</span></div><div class="project-meta"><div><h3>مداد للأعمال</h3><p>منصة لإدارة الشركات الناشئة · 2025</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card reveal" data-category="mobile"><div class="project-image image-aurora"><div class="project-ui aurora-ui"><span class="ui-logo">N</span><span class="ui-title">نبض<br><b>لصحتك</b></span><div class="ui-progress"><i></i></div><small>رحلة اليوم 84%</small></div><span class="image-index">03</span></div><div class="project-meta"><div><h3>نبض</h3><p>تطبيق متابعة الصحة اليومية · 2025</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card project-wide reveal" data-category="mobile"><div class="project-image image-safha"><div class="safha-side">01 — 06</div><div class="safha-title">اقرأ<br><em>بطريقتك.</em></div><div class="book-lines"></div><span class="image-index">04</span></div><div class="project-meta"><div><h3>رفوف</h3><p>قارئ كتب اجتماعي عربي · 2024</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card reveal" data-category="identity"><div class="project-image image-noon"><span class="noon-star">✳</span><span class="noon-word">أثر</span><span class="noon-caption">هوية · مساحة · مجتمع</span><span class="image-index">05</span></div><div class="project-meta"><div><h3>أثر كافيه</h3><p>هوية بصرية وتجربة مكان · 2024</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card project-wide reveal" data-category="mobile"><div class="project-image image-wasl"><div class="wasl-map"><span class="map-pin">◆</span><span class="map-route"></span><div class="map-label">دَرب<br><small>خليك قريب</small></div></div><span class="image-index">06</span></div><div class="project-meta"><div><h3>درب</h3><p>دليل تنقل وتجارب محلية · 2023</p></div><span class="project-arrow">↗</span></div></article>
+        <article class="project-card project-wide reveal" data-category="web"><div class="project-image image-nova"><div class="nova-grid"></div><strong>بيت<br><small>STUDIO</small></strong><span class="image-index">07</span></div><div class="project-meta"><div><h3>بيت للتصميم</h3><p>منصة إبداعية للمصممين · 2023</p></div><span class="project-arrow">↗</span></div></article>
       </div>
       <button class="load-more" type="button">عرض كل المشاريع <span>＋</span></button>
     </section>
@@ -110,8 +80,6 @@
     <section class="contact-section section" id="contact"><div class="contact-mark">✦</div><p class="eyebrow">04 / لنتحدث</p><h2>عندك شيء<br><em>نبنيه سوا؟</em></h2><a class="contact-email" href="mailto:fouadmohsen136@gmail.com">fouadmohsen136@gmail.com <span>↗</span></a><div class="contact-footer"><span>الإسكندرية · القاهرة</span><span>© 2024 The Store</span><div class="socials"><a href="#contact">in</a><a href="#contact">ig</a><a href="#contact">x</a></div></div></section>
   </main>
   <a class="whatsapp-float" href="https://wa.me/201283801464?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D8%AB%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9" target="_blank" rel="noopener" aria-label="ابدأ محادثة على واتساب"><span>واتساب</span><b>⌁</b></a>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
