@@ -23,8 +23,38 @@
       <a href="#contact">تواصل</a>
     </nav>
     <a class="header-cta whatsapp-link" href="https://wa.me/201283801464?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D8%AB%20%D8%B9%D9%86%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9" target="_blank" rel="noopener"><span>تواصل واتساب</span><i>↗</i></a>
+    <button class="admin-trigger" type="button" aria-controls="admin-panel">إدارة الموقع</button>
     <button class="menu-toggle" aria-label="فتح القائمة"><span></span><span></span></button>
   </header>
+
+  <aside class="admin-panel" id="admin-panel" hidden>
+    <div class="upload-panel-head"><div><p class="eyebrow">ADMIN / CONTENT</p><h3>إدارة الموقع</h3></div><button class="upload-close" type="button" aria-label="إغلاق لوحة الإدارة">×</button></div>
+    <form class="admin-login" novalidate>
+      <label>البريد الإلكتروني<input name="email" type="email" autocomplete="username" required placeholder="admin@example.com"></label>
+      <label>كلمة المرور<input name="password" type="password" autocomplete="current-password" required></label>
+      <button class="button button-primary" type="submit">تسجيل الدخول <span>↗</span></button>
+    </form>
+    <div class="admin-tools" hidden>
+      <div class="admin-toolbar"><strong>أنت مسجل الدخول</strong><button class="admin-logout" type="button">تسجيل الخروج</button></div>
+      <form class="content-form" novalidate>
+        <label>العنوان الرئيسي<input name="heroTitle" required></label>
+        <label>النص التعريفي<textarea name="heroIntro" rows="3" required></textarea></label>
+        <label>نبذة عن الاستوديو<textarea name="aboutText" rows="4" required></textarea></label>
+        <label>البريد الإلكتروني<input name="contactEmail" type="email" required></label>
+        <button class="button button-primary" type="submit">حفظ محتوى الصفحة <span>↗</span></button>
+      </form>
+      <form class="project-form" novalidate>
+        <h4>إضافة مشروع</h4>
+        <label>اسم المشروع<input name="title" required></label>
+        <label>الوصف<input name="description" required></label>
+        <label>التصنيف<select name="category"><option value="mobile">تطبيقات</option><option value="web">ويب</option><option value="identity">هوية</option></select></label>
+        <label class="file-drop">صورة الغلاف<input name="cover" type="file" accept="image/*"><span>اختياري</span></label>
+        <label class="file-drop">ملف المشروع<input name="file" type="file"><span>اختياري</span></label>
+        <button class="button button-primary" type="submit">إضافة المشروع <span>＋</span></button>
+      </form>
+    </div>
+    <p class="admin-status" role="status"></p>
+  </aside>
 
   <main id="top">
     <section class="hero">
